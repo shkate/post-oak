@@ -1,8 +1,9 @@
 application: post-oak
 version: 1
-runtime: go
+runtime: python
 api_version: 1
 
 handlers:
-- url: /.*
-  script: _go_app
+
+- url: .*
+  script: main.py
